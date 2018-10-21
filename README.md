@@ -8,6 +8,13 @@ Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)
     <img src='exercicioA/Figura2.png' width='48%' tittle='Figura 1' caption='Figura 1' />
 </p>
 
+<table class="image">
+ <caption align="bottom">Figura 1</caption>
+  <tr><td><img src="exercicioA/Figura1.png" width='48%' alt='Figura 1'/></td></tr>
+ <caption align="bottom">Figura 1</caption>
+  <tr><td><img src="exercicioA/Figura1.png" width='48%' alt='Figura 1'/></td></tr>
+</table>
+
 
 ## Exercício B [40%]: Implementaçã de um esquema AIMD simples.
 
