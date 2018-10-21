@@ -8,6 +8,7 @@ Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)
     <img src='exercicioA/Figura2.png' width='48%' tittle='Figura 1' alt='Figura 1' figcaption='Figura 1' />
 </p>
 
+![alt-text-1](exercicioA/Figura1.png "title-1") ![alt-text-2](exercicioA/Figura1.png "title-2")
 ## Exercício B [40%]: Implementaçã de um esquema AIMD simples.
 
 
