@@ -3,6 +3,19 @@
 - A variação do tamanho da janela foi uma crescente de 5 em 5, começando em 5. Essa abordagem, de manter a janela com um tamanho fixo não traz muitos beneficios para a transmissão, pois em momentos em que a rede enfrenta um congestionamento e a janela se mantem do mesmo tamanho, o problema é agravado, aumentando ainda mais o **delay** da rede. Porem, com os testes realizados, é possivel identifar a janela com tamanho 15 como a melhor opçao neste cenário, por atingir um melhor trhoughput e um delay razoávelmente menor, quando comparado com outras medições. A Figura 1 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/15/#/)), demonstra que o Throughput e o Delay crescem em valores de forma proporcional. A
 Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)), ilustra a relação entre o tamanho da janela e o "power" alcançado de cada cenário testado.
 
+<figure>
+    <img src='exercicioA/Figura1.png' />
+    <font size="2">
+    <figcaption> Abb.1: <a href= "http://r-spatial.org//2016/11/29/openeo.html">http://r-spatial.org//2016/11/29/openeo.html </a> 
+    </figcaption>
+    </font>
+  <img src='exercicioA/Figura2.png' />
+    <font size="2">
+    <figcaption> Abb.1: <a href= "http://r-spatial.org//2016/11/29/openeo.html">http://r-spatial.org//2016/11/29/openeo.html </a> 
+    </figcaption>
+    </font>
+</figure>
+
 <img align="left" src="exercicioA/Figura1.png" alt="Made with Angular" title="Angular" hspace="20"/>
 <img align="left" src="exercicioA/Figura2.png" alt="Made with Angular" title="Angular" hspace="20"/>
 <br/><br/><br/><br/><br/>
