@@ -4,21 +4,16 @@
 Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)), ilustra a relação entre o tamanho da janela e o "power" alcançado de cada cenário testado.
 
 <figure>
-    <img src='exercicioA/Figura1.png' />
+    <img src='exercicioA/Figura1.png' width='50%' />
     <font size="2">
-    <figcaption> Abb.1: <a href= "http://r-spatial.org//2016/11/29/openeo.html">http://r-spatial.org//2016/11/29/openeo.html </a> 
-    </figcaption>
+    <figcaption> Figura 1: </figcaption>
     </font>
-  <img src='exercicioA/Figura2.png' />
+  <img src='exercicioA/Figura2.png' width='50%' />
     <font size="2">
-    <figcaption> Abb.1: <a href= "http://r-spatial.org//2016/11/29/openeo.html">http://r-spatial.org//2016/11/29/openeo.html </a> 
-    </figcaption>
+    <figcaption> Figura 2:</figcaption>
     </font>
 </figure>
 
-<img align="left" src="exercicioA/Figura1.png" alt="Made with Angular" title="Angular" hspace="20"/>
-<img align="left" src="exercicioA/Figura2.png" alt="Made with Angular" title="Angular" hspace="20"/>
-<br/><br/><br/><br/><br/>
 
 ## Exercício B [40%]: Implementaçã de um esquema AIMD simples.
 
