@@ -1,14 +1,9 @@
 # TP2-Redes
-• Exercício de aquecimento A [10%]: Varie o tamanho da janela fixa editando
-controller.cc para ver o que acontece. Faça um gráfico 2D de taxa de transferência
-versus um atraso no sinal com percentil de 95 à medida que você altera
-esse valor. Qual é o melhor tamanho de janela única que você pode encontrar
-para maximizar a potência (taxa de transferência/atraso)? Quão repetíveis são
-as medições feitas com o mesmo tamanho de janela em várias execuções?
+## Exercício A [10%]: Variação do tamanho da janela.
+- A variação do tamanho da janela foi uma crescente de 5 em 5, começando em 5. Essa abordagem, de manter a janela com um tamanho fixo não traz muitos beneficios para a transmissão, pois em momentos em que a rede enfrenta um congestionamento e a janela se mantem do mesmo tamanho, o problema é agravado, aumentando ainda mais o **delay** da rede. Porem, com os testes realizados, é possivel identifar a janela com tamanho 15 como a melhor opçao neste cenário, por atingir um melhor trhoughput e um delay razoávelmente menor, quando comparado com outras medições. A Figura 1 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)), ilustra a relação entre o tamanho da janela e o "power" alcançado de cada cenário testado. A Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/15/#/)), demonstra que o Throughput e o Delay, crescem em valores de forma proporcional.
 
-• Exercício de aquecimento B [40%]: Implemente um esquema AIMD simples,
-semelhante à fase de prevençãao de congestionamento do TCP. Quão bem isso
-funciona? Quais constantes você escolheu?
+## Exercício B [40%]: Implementaçã de um esquema AIMD simples.
+
 
 • Exercício D [50%]: Tente diferentes abordagens e trabalhe para maximizar a
 potência (compare com os resultados dos demais colegas da sala e tente melhorar).
