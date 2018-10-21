@@ -10,8 +10,7 @@ Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)
 
 <table class="image">
  <caption align="bottom">Figura 1</caption>
-  <img src="exercicioA/Figura1.png" width='48%' alt='Figura 1'/>
-  <img src="exercicioA/Figura1.png" width='48%' alt='Figura 1'/>
+  <img src="exercicioA/Figura1.png" width='48%' alt='Figura 1'/> <img src="exercicioA/Figura1.png" width='48%' alt='Figura 1'/>
 </table>
 
 
