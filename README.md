@@ -8,8 +8,8 @@ Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)
     <img src='exercicioA/Figura2.png' width='40%' <figcaption> Figura 2 </figcaption>
 </p>
 
-| [![VideoBlocks](exercicioA/Figura1.png)]|
-| [![AudioBlocks](exercicioA/Figura1.png)]|
+| [![VideoBlocks](exercicioA/Figura1.png width='40%')]|
+| [![AudioBlocks](exercicioA/Figura1.png width='40%')]|
 |:---:|:---:|
 | http://videoblocks.com | http://audioblocks.com
 
