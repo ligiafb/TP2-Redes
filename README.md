@@ -4,8 +4,8 @@
 Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)), ilustra a relação entre o tamanho da janela e o "power" alcançado de cada cenário testado.
 
 <figure>
-    <img src='exercicioA/Figura1.png' width='40%' figcaption="Figura 1" />
-    <img src='exercicioA/Figura2.png' width='40%' figcaption="Figura 1" />
+    <img src='exercicioA/Figura1.png' width='40%' <figcaption> Figura 1 </figcaption> />
+    <img src='exercicioA/Figura2.png' width='40%' <figcaption> Figura 1 </figcaption> />
 </figure>
 
 
