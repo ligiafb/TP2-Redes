@@ -10,6 +10,15 @@ Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)
 
 
 ## Exercício B [40%]: Implementaçã de um esquema AIMD simples.
+- O controle de congestionamento tem por função limitar ou aumentar a taxa de envio dos pacotes de um emissor a fim de evitar um congestionamento no canal utilizado. Ao início de cada RTT (tempo de ida e volta) o remetente enviará seus pacotes de acordo com o tamanho da janela de congestionamento (**CWND**) estabelecida e ao final, receberá um reconhecimento para dos dados, um sinal de que todos os pacotes foram enviados corretamente. O Additive Increase/Multiplicative Decrease (**AIMD**), também conhecidos como dentes de serra (devido ao seu comportamento graficamente, Figura 3) tem por função auxiliar o controle de congestionamento no aumendo gradativo da janela e na redução da mesma pela metade quando um congestionamento é identificado pelo TCP. 
+
+<p float="center" align="center" >
+    <img src='exercicioA/AIMD.png' width='48%' title='Figura 1' alt='Figura 1' /> 
+</p>
+
+Existem duas fases básicas no algoritmo AIMD: início lento (**slow start**) e a prevenção de congestionamento (**congestion avoidance**). O *slow start* é geralmente usada no começo de uma conexão. Nesta fase, a **CWND** aumenta exponencialmente. Depois de atingir um limite (**ssthresh**), o algoritmo entra no estado de *congestion avoidance* e durante este periodo, o tamanho da janela é incrementado de forma mais sutil.
+
+No experimento realizado, ***alpha*** é o fator aditivo para aumento da janela enquanto ***beta*** é o fator multiplicativo para decrementar a mesma. 
 
 
 • Exercício D [50%]: Tente diferentes abordagens e trabalhe para maximizar a
