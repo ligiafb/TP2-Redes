@@ -26,8 +26,8 @@ Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)
    <th> Multiplicative Decrease </th>
  </tr>
  <tr>
-   <th><img src='exercicioB/AI.gif' alt="Additive Increase"/></th>
-   <th><img src='exercicioB/MD.gif' alt="Multiplicative Decrease"/></th>
+   <th><img align="center" src='exercicioB/AI.gif' alt="Additive Increase"/></th>
+   <th><img align="center" src='exercicioB/MD.gif' alt="Multiplicative Decrease"/></th>
  </tr>
 </table>
 
