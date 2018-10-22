@@ -29,7 +29,9 @@ Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)
 
 <table class="image">
 <caption align="bottom">Additive Increase</caption>
-<tr><td><img src='exercicioB/MD.gif' alt="Additive Increase"/></td></tr>
+<tr><td><img src='exercicioB/AI.gif' alt="Additive Increase"/></td></tr>
+caption align="bottom">Multiplicative Decrease</caption>
+<tr><td><img src='exercicioB/MD.gif' alt="Multiplicative Decrease"/></td></tr>
 </table>
 
 
