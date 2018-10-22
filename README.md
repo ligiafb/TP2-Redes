@@ -24,10 +24,10 @@ Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)
  <tr>
    <th> Additive Increase </th>
    <th> Multiplicative Decrease </th>
- <\tr>
+ </tr>
  <tr>
    <th><img src='exercicioB/AI.gif' alt="Additive Increase"/></th>
-   <th><img src='exercicioB/AI.gif' alt="Additive Increase"/></th>
+   <th><img src='exercicioB/MD.gif' alt="Multiplicative Decrease"/></th>
  </tr>
 </table>
 
