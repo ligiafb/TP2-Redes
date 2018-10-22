@@ -27,6 +27,12 @@ Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)
     <em> Multiplicative Decrease </em>
 </p>
 
+<table class="image">
+<caption align="bottom">Additive Increase</caption>
+<tr><td><img src='exercicioB/MD.gif' alt="Additive Increase"/></td></tr>
+</table>
+
+
 
 • Exercício D [50%]: Tente diferentes abordagens e trabalhe para maximizar a
 potência (compare com os resultados dos demais colegas da sala e tente melhorar).
