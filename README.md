@@ -21,9 +21,9 @@ Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)
 - No experimento realizado, ***alpha*** é o parâmetro aditivo para a janela enquanto ***beta*** é o parâmetro multiplicativo para decrementar a mesma. Os valores recomendados pela RFC para ambos os parâmetros são: alpha = 1/8 e beta = 1/4. Dessa forma, a figura abaixo demonstra a equação para o incremento da janela em periodos de *slow start*
 
 <p float="center" align="center" >
-    <img src='exercicioB/AI.gif' width='30%' title='Additive Increase' alt='Additive Increase' /> 
+    <img align="left" src='exercicioB/AI.gif' width='30%' title='Additive Increase' alt='Additive Increase' /> 
     <em> Additive Increase </em>
-    <img src='exercicioB/MD.gif' width='20%' title='Multiplicative Decrease' alt='Multiplicative Decrease' />
+    <img align="right" src='exercicioB/MD.gif' width='20%' title='Multiplicative Decrease' alt='Multiplicative Decrease' />
     <em> Multiplicative Decrease </em>
 </p>
 
