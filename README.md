@@ -16,9 +16,11 @@ Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)
     <img src='exercicioB/AIMD.png' width='68%' title='AIMD' alt='AIMD' /> 
 </p>
 
-Existem duas fases básicas no algoritmo AIMD: início lento (**slow start**) e a prevenção de congestionamento (**congestion avoidance**). O *slow start* é geralmente usada no começo de uma conexão. Nesta fase, a **CWND** aumenta exponencialmente. Depois de atingir um limite (**ssthresh**), o algoritmo entra no estado de *congestion avoidance* e durante este periodo, o tamanho da janela é incrementado de forma mais sutil.
+- Existem duas fases básicas no algoritmo AIMD: início lento (**slow start**) e a prevenção de congestionamento (**congestion avoidance**). O *slow start* é geralmente usada no começo de uma conexão. Nesta fase, a **CWND** aumenta exponencialmente. Depois de atingir um limite (**ssthresh**), o algoritmo entra no estado de *congestion avoidance* e durante este periodo, o tamanho da janela é incrementado de forma mais sutil.
 
-No experimento realizado, ***alpha*** é o fator aditivo para aumento da janela enquanto ***beta*** é o fator multiplicativo para decrementar a mesma. 
+- No experimento realizado, ***alpha*** é o parâmetro aditivo para a janela enquanto ***beta*** é o parâmetro multiplicativo para decrementar a mesma. Os valores recomendados pela RFC para ambos os parâmetros são: alpha = 1/8 e beta = 1/4. Dessa forma, a figura abaixo demonstra a equação para o incremento da janela em periodos de *slow start*
+
+\alpha
 
 
 • Exercício D [50%]: Tente diferentes abordagens e trabalhe para maximizar a
