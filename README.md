@@ -31,9 +31,13 @@ Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)
  </tr>
 </table>
 
-Os resultados utilizando o AIMD não apresentam beneficios tão expressivos para a vazão, entretanto a técnica garante uma utilização mais justa do canal quando há competição do link com outros fluxos. A Tabela a seguir apresenta os resultados obtidos a partir da variação dos valores de *alpha* e *beta*. O **timeout** de espera pelo ACK e ssthresh foram mantidos em ...
+- O AIMD não apresentou beneficios tão expressivos para a vazão, entretanto a técnica garante uma utilização mais justa do canal quando há competição do link com outros fluxos. A Tabela a seguir apresenta os resultados obtidos a partir da variação dos valores de *alpha* e *beta*. O **timeout** de espera pelo ACK e ssthresh foram mantidos em ...
 
-
+| **Alpha** | **Beta**  | **Throughput (Mbits/s) | **95% Dignal Delay (ms)** | **Power** |
+| --------- | --------- | ---------------------- | ------------------------- | --------- |
+| 0.1 | 1.5 | 3.5 | 200.75 | 10.2 |
+| 0.1 | 1.5 | 3.5 | 200.75 | 10.2 |
+| 0.1 | 1.5 | 3.5 | 200.75 | 10.2 |
 
 • Exercício D [50%]: Tente diferentes abordagens e trabalhe para maximizar a
 potência (compare com os resultados dos demais colegas da sala e tente melhorar).
