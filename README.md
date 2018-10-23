@@ -20,12 +20,7 @@ Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)
 
 - No experimento realizado, ***alpha*** é o parâmetro aditivo para a janela enquanto ***beta*** é o parâmetro multiplicativo para decrementar a mesma. Os valores recomendados pela RFC para ambos os parâmetros são: alpha = 1/8 (12.5%) e beta = 1/4 (25%). Dessa forma, a Tabela abaixo demonstra a equação para o incremento da janela em periodos de *slow start* e a equação utilizada para decrementar o tamanho da janela em periodos em que é detectado um congestionamento, neste caso, o congestionamento é identificado após um periodo pré-estipuldo sem receber um reconhecimento (ACK) de um pacote enviado anteriormente e como o cenário utiliza UDP, não há reconhecimentos duplicados, ou **ACK DUP**, pois todos os pacotes recebem um novo valor para o número de sequencia, inclusive os pacotes retransmitidos.
 
-<table align="right">
- <tr>
-   <th> Additive Increase </th>
-   <th> Multiplicative Decrease </th>
- </tr>
- <tr>
+| Additive Increase | Multiplicative Decrease |:q
    <th><img align="center" src='exercicioB/AI.gif' alt="Additive Increase"/></th>
    <th><img align="center" src='exercicioB/MD.gif' alt="Multiplicative Decrease"/></th>
  </tr>
@@ -33,11 +28,18 @@ Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)
 
 - O AIMD não apresentou beneficios tão expressivos para a vazão, entretanto a técnica garante uma utilização mais justa do canal quando há competição do link com outros fluxos. A Tabela a seguir apresenta os resultados obtidos a partir da variação dos valores de *alpha* e *beta*. O **timeout** de espera pelo ACK e ssthresh foram mantidos em ...
 
-| **Alpha** | **Beta**  | **Throughput (Mbits/s) | **95% Dignal Delay (ms)** | **Power** |
-|  :---     |   :---:   |           :---:        |          :---:            |      ---: |
-| 0.1 | 1.5 | 3.5 | 200.75 | 10.2 |
-| 0.1 | 1.5 | 3.5 | 200.75 | 10.2 |
-| 0.1 | 1.5 | 3.5 | 200.75 | 10.2 |
+| **Alpha** | **Beta**  | **Throughput (Mbits/s) | **95% Dignal Delay (ms)** | **Timeout (ms)**| **Power** |
+|  :---     |   :---:   |           :---:        |          :---:            |    :---:        |      ---: |
+| 0.125 | 0.25 | 4.63 | 625    | 1000 | 7.42  |
+| 0.250 | 0.25 | 4.78 | 675    | 1000 | 7.070  |
+| 0.5   | 0.25 | ---  | ---    | 1000 | ---   |
+| 0.750 | 0.25 | ---  | ---    | 1000 | ---   |
+| 1     | 0.25 | ---  | ---    | 1000 | ---   |
+| 0.125 | 0.5  | ---  | ---    | 1000 | ---   |
+| 0.250 | 0.5  | ---  | ---    | 1000 | ---   |
+| 0.5   | 0.5  | ---  | ---    | 1000 | ---   |
+| 0.750 | 0.5  | ---  | ---    | 1000 | ---   |
+| 1     | 0.5  | ---  | ---    | 1000 | ---   |
 
 • Exercício D [50%]: Tente diferentes abordagens e trabalhe para maximizar a
 potência (compare com os resultados dos demais colegas da sala e tente melhorar).
