@@ -27,13 +27,18 @@ Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)
 
 - Com o AIMD implementado, as simulações não apresentaram beneficios para a vazão, entretanto a técnica garante uma utilização mais justa do canal quando há competição do link com outros fluxos. A Tabela a seguir apresenta os resultados obtidos a partir da variação dos valores de *alpha* e *beta*. O **Timeout** de espera pelo ACK nestes primeiros testes com o AIMD manteve o valor fixo de 1000 ms.
 
-![](exercicioB/tabela.png "Tabela 1")
+<p float="center" align="center" >
+    <img src='exercicioB/tabela.png' width='68%' title='Tabela AIMD simples' alt='Tabela AIMD simples' /> 
+</p>
 
 - Com o auxilio da Tabela anterior, podemos verificar que com o valor de *alpha* menor, o que resulta um aumento menos agressivo para a janela de congestionamento, o desempenho foi melhor (*Power*) quando comparado com outros valores que fazem com que a janela cresça de forma mais expressiva a cada ACK recebido. Em contra partida, o mecanismo obteve um desempenho pior quando comparado ao experimento anterior, com as janelas de tamanho fixo. Como pode ser observado na Tabela abaixo, o melhor cenário atingiu um valor para *Power* de 7.46 enquanto a janela de tamanho fixo com valor 10 e 15 do exercicio A atingiram valores aproximados à 12. 
 
 - Evidente a necessidade do mecanismo para questões de justiça (farness) na utilização do canal. Mas a qualidade do modelo implementado é pobre, principalmente quando há muita concorrencia pelo canal. Uma forma simples de melhorar o desempenho da conexão é diminuindo o tempo de *Timeout*, ou seja, o tempo esperado pelo recebimento do ACK. Com o *Timeout* configurado em 80ms o desempenho melhorou expressivamente e pode ser observado na Tabela abaixo.
 
-![](exercicioB/tabela2.png "Tabela 1")
+<p float="center" align="center" >
+    <img src='exercicioB/tabela2.png' width='68%' title='Tabela timeout' alt='Tabela timeout' /> 
+</p>
+
 
 ## Exercício D [50%]: Trabalhe para maximizar a potência.
 
