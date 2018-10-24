@@ -5,7 +5,7 @@ Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)
 
 <p float="center" align="center" >
     <img src='exercicioA/Figura1.png' width='48%' title='Figura 1' alt='Figura 1' /> 
-    <img src='exercicioA/Figura2.png' width='48%' title='Figura 1' alt='Figura 1' />
+    <img src='exercicioA/Figura2.png' width='48%' title='Figura 2' alt='Figura 2' />
 </p>
 
 
