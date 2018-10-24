@@ -22,7 +22,7 @@ Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)
 
 Solarized dark             |  Solarized Ocean
 :-------------------------:|:-------------------------:
-![](exercicioB/AI.gif  width='40%' "title-1")  |  ![](exercicioB/MD.gif  width='40%' "title-1")
+![](exercicioB/AI.gif "title-1")  |  ![](exercicioB/MD.gif "title-1")
 
 
 - O AIMD não apresentou beneficios tão expressivos para a vazão, entretanto a técnica garante uma utilização mais justa do canal quando há competição do link com outros fluxos. A Tabela a seguir apresenta os resultados obtidos a partir da variação dos valores de *alpha* e *beta*. O **timeout** de espera pelo ACK e ssthresh foram mantidos em ...
