@@ -18,15 +18,18 @@ Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)
 
 - Existem duas fases básicas no algoritmo AIMD: início lento (**slow start**) e a prevenção de congestionamento (**congestion avoidance**). O *slow start* é geralmente usada no começo de uma conexão. Nesta fase, a **CWND** aumenta exponencialmente. Depois de atingir um limite (**ssthresh**), o algoritmo entra no estado de *congestion avoidance* e durante este periodo, o tamanho da janela é incrementado de forma mais sutil.
 
-- No experimento realizado, ***alpha*** é o parâmetro aditivo para a janela enquanto ***beta*** é o parâmetro multiplicativo para decrementar a mesma. Os valores recomendados pela RFC para ambos os parâmetros são: alpha = 1/8 (12.5%) e beta = 1/4 (25%). Dessa forma, a Tabela abaixo demonstra a equação para o incremento da janela em periodos de *slow start* e a equação utilizada para decrementar o tamanho da janela em periodos em que é detectado um congestionamento, neste caso, o congestionamento é identificado após um periodo pré-estipuldo sem receber um reconhecimento (ACK) de um pacote enviado anteriormente e como o cenário utiliza UDP, não há reconhecimentos duplicados, ou **ACK DUP**, pois todos os pacotes recebem um novo valor para o número de sequencia, inclusive os pacotes retransmitidos.
+- No experimento realizado, ***alpha*** é o parâmetro aditivo para a janela enquanto ***beta*** é o parâmetro multiplicativo para decrementar a mesma. Os valores recomendados pela RFC para ambos os parâmetros são: alpha = 1/8 e beta = 1/4. Dessa forma, a Tabela abaixo demonstra a equação para o incremento da janela e a equação utilizada para decrementar o seu tamanho em periodos em que se é detectado um congestionamento, neste caso, o congestionamento é identificado após um periodo pré-estipuldo sem receber um reconhecimento (ACK) de um pacote enviado anteriormente e como o cenário utiliza UDP, não há reconhecimentos duplicados, ou **ACK DUP**, pois todos os pacotes recebem um novo valor para o número de sequencia, inclusive os pacotes retransmitidos.
 
-Additive Increase             |  Multiplicative Decrease
+| Additive Increase             |  Multiplicative Decrease
 :-------------------------:|:-------------------------:
-![](exercicioB/AI.gif "title-1")  |  ![](exercicioB/MD.gif "title-1")
+![](exercicioB/AI.gif "Additive Increase")  |  ![](exercicioB/MD.gif "Multiplicative Decrease")
 
 
-- O AIMD não apresentou beneficios tão expressivos para a vazão, entretanto a técnica garante uma utilização mais justa do canal quando há competição do link com outros fluxos. A Tabela a seguir apresenta os resultados obtidos a partir da variação dos valores de *alpha* e *beta*. O **timeout** de espera pelo ACK e ssthresh foram mantidos em ...
+- Com o AIMD implementado, as simulações não apresentaram beneficios para a vazão, entretanto a técnica garante uma utilização mais justa do canal quando há competição do link com outros fluxos. A Tabela a seguir apresenta os resultados obtidos a partir da variação dos valores de *alpha* e *beta*. O **timeout** de espera pelo ACK nestes primeiros testes com o AIMD manteve o valor fixo de 1000 ms.
 
+![](exercicioB/tabela.png "Tabela 1")
+
+- Com o auxilio da Tabela anterior, podemos verificar que com o valor de *alpha* menor, o que resulta um aumento menos agressivo para a janela de congestionamento, o desempenho foi melhor (*Power*) quando comparado com outros valores que fazem com que a janela cresça de forma mais expressiva a cada ACK recebido. Em contra partida, o mecanismo obteve um desempenho pior quando comparado ao experimento anterior, com as janelas de tamanho fixo. Como pode ser observado na Tabela abaixo, o melhor cenário atingiu um valor para *Power* de 7.46 enquanto a janela de tamanho fixo com valor 10 e 15 do exercicio A atingiram valores aproximados à 12.
 
 • Exercício D [50%]: Tente diferentes abordagens e trabalhe para maximizar a
 potência (compare com os resultados dos demais colegas da sala e tente melhorar).
