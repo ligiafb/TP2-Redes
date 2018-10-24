@@ -20,7 +20,7 @@ Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)
 
 - No experimento realizado, ***alpha*** é o parâmetro aditivo para a janela enquanto ***beta*** é o parâmetro multiplicativo para decrementar a mesma. Os valores recomendados pela RFC para ambos os parâmetros são: alpha = 1/8 (12.5%) e beta = 1/4 (25%). Dessa forma, a Tabela abaixo demonstra a equação para o incremento da janela em periodos de *slow start* e a equação utilizada para decrementar o tamanho da janela em periodos em que é detectado um congestionamento, neste caso, o congestionamento é identificado após um periodo pré-estipuldo sem receber um reconhecimento (ACK) de um pacote enviado anteriormente e como o cenário utiliza UDP, não há reconhecimentos duplicados, ou **ACK DUP**, pois todos os pacotes recebem um novo valor para o número de sequencia, inclusive os pacotes retransmitidos.
 
-Solarized dark             |  Solarized Ocean
+Additive Increase             |  Multiplicative Decrease
 :-------------------------:|:-------------------------:
 ![](exercicioB/AI.gif "title-1")  |  ![](exercicioB/MD.gif "title-1")
 
