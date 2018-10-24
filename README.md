@@ -28,23 +28,23 @@ Figura 2 ([Link para melhor vizualização](https://plot.ly/~paulogil2010/13/#/)
 
 - O AIMD não apresentou beneficios tão expressivos para a vazão, entretanto a técnica garante uma utilização mais justa do canal quando há competição do link com outros fluxos. A Tabela a seguir apresenta os resultados obtidos a partir da variação dos valores de *alpha* e *beta*. O **timeout** de espera pelo ACK e ssthresh foram mantidos em ...
 
-| **Alpha** | **Beta**  | **Throughput (Mbits/s) | **95% Dignal Delay (ms)** | **Timeout (ms)**| **Power** |
-|  :---     |   :---:   |           :---:        |          :---:            |    :---:        |      ---: |
-| 0.125 | 0.250 | 4.67 | 626    | 1000 | 7.46  |
-| 0.125 | 0.500 | 4.67 | 628    | 1000 | 7.44  |
+| **Alpha** | **Beta**  | **Throughput (Mbits/s)** | **95% Dignal Delay (ms)** | **Timeout (ms)**| **Power** |
+|  :---     |   :---:   |           :---:          |          :---:            |    :---:        |      ---: |
+| 0.125 | 0.250 | 4.67  | 626    | 1000 | 7.46   |
+| 0.125 | 0.500 | 4.67  | 628    | 1000 | 7.44   |
 | 0.125 | 0.750 | 4.67  | 627    | 1000 | 7.45   |
 | 0.250 | 0.250 | 4.80  | 677    | 1000 | 7.09   |
 | 0.250 | 0.500 | 4.79  | 676    | 1000 | 7.09   |
 | 0.250 | 0.750 | 4.80  | 676    | 1000 | 7.10   |
 | 0.500 | 0.250 | 4.89  | 749    | 1000 | 6.54   |
 | 0.500 | 0.500 | 4.89  | 750    | 1000 | 6.52   |
-| 0.500 | 0.750 | ---  | ---    | 1000 | 6.52   |
-| 0.750 | 0.250 | ---  | ---    | 1000 | 5.62   |
-| 0.750 | 0.500 | ---  | ---    | 1000 | 5.53   |
-| 0.750 | 0.750 | ---  | ---    | 1000 | 5.54  |
-| 1.000 | 0.250 | ---  | ---    | 1000 | 5.69   |
-| 1.000 | 0.500 | ---  | ---    | 1000 | 5.66   |
-| 1.000 | 0.750 | ---  | ---    | 1000 | 5.71   |
+| 0.500 | 0.750 | 4.89  | 751    | 1000 | 6.52   |
+| 0.750 | 0.250 | 4.93  | 876    | 1000 | 5.62   |
+| 0.750 | 0.500 | 4.92  | 889    | 1000 | 5.53   |
+| 0.750 | 0.750 | 4.93  | 890    | 1000 | 5.54   |
+| 1.000 | 0.250 | 4.95  | 870    | 1000 | 5.69   |
+| 1.000 | 0.500 | 4.94  | 874    | 1000 | 5.66   |
+| 1.000 | 0.750 | 4.95  | 867    | 1000 | 5.71   |
 
 • Exercício D [50%]: Tente diferentes abordagens e trabalhe para maximizar a
 potência (compare com os resultados dos demais colegas da sala e tente melhorar).
