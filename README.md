@@ -15,7 +15,7 @@
     <img src='exercicioB/AIMD.png' width='68%' title='AIMD' alt='AIMD' /> 
 </p>
 
-- Existem duas fases básicas no algoritmo AIMD: início lento (slow start) e a prevenção de congestionamento (congestion avoidance). O *slow start* é geralmente usada no começo de uma conexão ou após um congestionamento. Nesta fase, a *CWND* aumenta exponencialmente. Depois de atingir um limite (ssthresh), o algoritmo entra no estado de *congestion avoidance* e o tamanho da janela é incrementado de forma mais sutil, geralmente de 1 em 1.
+- Existem duas fases básicas no algoritmo AIMD: início lento (slow start) e a prevenção de congestionamento (congestion avoidance). O *slow start* é usada no começo de uma transmissão. Nesta fase, a *CWND* aumenta exponencialmente. Depois de atingir um limite (ssthresh), o algoritmo entra no estado de *congestion avoidance* e o tamanho da janela é incrementado de forma mais sutil.
 
 - No experimento realizado, *alpha* é o parâmetro aditivo para a janela enquanto *beta* é o parâmetro multiplicativo para decrementar a mesma. Os valores recomendados pela RFC para ambos os parâmetros são: alpha = 1 e beta = 0,5. Dessa forma, a Figura abaixo demonstra a equação para o incremento da janela e a equação utilizada para decrementar o seu tamanho em periodos em que se é detectado um congestionamento, neste caso, o congestionamento é identificado após um periodo pré-estipuldo (temporizador) sem receber um reconhecimento (ACK) de um pacote enviado anteriormente e como o cenário utiliza UDP, não há reconhecimentos duplicados, ou *ACK DUP*, pois todos os pacotes recebem um novo valor para o número de sequencia, inclusive os pacotes retransmitidos.
 
@@ -40,7 +40,13 @@
 
 ## Exercício D [50%]: Trabalhe para maximizar a potência.
 
-- Para melhorar o desempenho do AIMD do exercicio anterior, bastou diminuir o temporizador de espera pelo reconhecimento do pacote enviado. O ganho em *power* para a transmissão foi bastante significativo quando este temporizador foi configurado para *80 ms* ao invés de 1 segundo, como o padrão do código e orientação da RFC 6298. A fim de melhorar ainda mais os resultados, adicionamos o calculo de RTO . 
+- Para melhorar o desempenho do AIMD do exercicio anterior, bastou diminuir o temporizador de espera pelo reconhecimento do pacote enviado. O ganho em *power* para a transmissão foi bastante significativo quando este temporizador foi configurado para *80 ms* ao invés de 1 segundo, como o padrão do código e sugestão da RFC 6298. A fim de melhorar ainda mais os resultados, adicionamos o calculo de RTO dado pela formula abaixo. 
+
+<p float="left" align="center" >
+    <img src='exercicioB/rto1.png' width='80%' title='Tabela timeout' alt='Tabela timeout' /> 
+    <img src='exercicioB/rto2.png' width='80%' title='Tabela timeout' alt='Tabela timeout' /> 
+    <img src='exercicioB/rto3.png' width='80%' title='Tabela timeout' alt='Tabela timeout' /> 
+</p>
 
 
 ## Exercício E [0%]: escolha um nome legal para o seu esquema!
