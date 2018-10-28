@@ -44,12 +44,10 @@
 
 - o RTO varia de acordo com o RTT. Ele traz maior dinamicidade para a transmissão e proporciona um menor delay. Contudo, pequenas variações do RTT podem reduzir a janela pela metade, diminuindo significativamente o throughput total da transmissão. Com a adição do cálculo do RTO e algumas variações de alpha e beta no código chegamos aos seguintes resultados;
 
-| Timeout | Throughput (Mbits/s) | Delay (ms) | Power |
-| :---   |   :----:   | :---: |  ---: |
-| RTO | 2.74 | 227 | 12.07 |
-| RTO | 2.06 | 150 | 13.74 |
-| RTO | 1.96 | 138 | 14.18 |
-| RTO | 1.63 | 158 | 10.31 |
+<p float="center" align="center" >
+    <img src='exercicioC/tabela1.png' width='80%' title='Tabela RTO' alt='Tabela RTO' /> 
+</p>
+
 
 
 ## Exercício E [0%]: escolha um nome legal para o seu esquema!
