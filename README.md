@@ -44,7 +44,7 @@
 
 <p float="left" align="left" >
     <img src='exercicioB/rto1.png' width='50%' title='Tabela timeout' alt='Tabela timeout' /> 
-    <img src='exercicioB/rto2.png' width='60%' title='Tabela timeout' alt='Tabela timeout' /> 
+    <img src='exercicioB/rto2.png' width='80%' title='Tabela timeout' alt='Tabela timeout' /> 
     <img src='exercicioB/rto3.png' width='50%' title='Tabela timeout' alt='Tabela timeout' /> 
 </p>
 
