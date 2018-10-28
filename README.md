@@ -48,7 +48,12 @@
     <img src='exercicioC/tabela1.png' width='80%' title='Tabela RTO' alt='Tabela RTO' /> 
 </p>
 
+- Com o cálculo de RTO, não foi possível melhorar o desempenho da transmissão comparado com o timeout de valor fixo em 80 ms. Assim, a abordagem adotada foi diminuir a ação do *Multiplicative Decrease* adicionando um contador para o número de retransmissões. Quando um congestionamento é identificado, a CWND é reduzida pela metade conforme o AIMD padrão, porem se mantem com este tamanho por mais tempo, à espera de uma redução do delay sem afetar muito o throughput, caso o RTT não estabilize a janela é reduzida novamente pela metade e mantém esse valor por mais um periodo de tempo. O resultado final do experimento pode ser observado na tabela logo abaixo, duas abordagens com variações do cálculo do RTO com a adição de um limitador, forçando o RTO ser um valor abaixo de 80 e 100 ms e outra com o timeout fixo com ambos os valores. 
 
+
+<p float="center" align="center" >
+    <img src='exercicioC/tabela2.png' width='80%' title='Final' alt='Final' /> 
+</p>
 
 ## Exercício E [0%]: escolha um nome legal para o seu esquema!
 
