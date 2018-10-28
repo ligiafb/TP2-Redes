@@ -12,7 +12,7 @@
 - O controle de congestionamento tem por função diminuir ou aumentar a taxa de envio dos pacotes de um emissor a fim de evitar um congestionamento no canal utilizado. No início de cada transmissão, o remetente enviará seus pacotes de acordo com o tamanho da janela de congestionamento (CWND) estabelecida e logo em seguida, receberá um reconhecimento dos dados entregues, um sinal de que todos os pacotes foram enviados corretamente, como também o tempo total da operação de envio e confirmação dos dados, esse tempo é conhecido como o tempo de ida e volta, ou RTT. O Additive Increase/Multiplicative Decrease (AIMD), caracterizado como dentes de serra (devido ao seu comportamento graficamente, exemplificado na Figura abaixo) tem por função auxiliar o controle de congestionamento no aumendo gradativo da janela e na redução da mesma pela metade quando um congestionamento é identificado pelo TCP. 
 
 <p float="center" align="center" >
-    <img src='exercicioB/AIMD.png' width='68%' title='AIMD' alt='AIMD' /> 
+    <img src='exercicioB/AIMD.png' width='48%' title='AIMD' alt='AIMD' /> 
 </p>
 
 - Existem duas fases básicas no algoritmo AIMD: início lento (slow start) e a prevenção de congestionamento (congestion avoidance). O *slow start* é usada no começo de uma transmissão. Nesta fase, a *CWND* aumenta exponencialmente. Depois de atingir um limite (ssthresh), o algoritmo entra no estado de *congestion avoidance* e o tamanho da janela é incrementado de forma mais sutil.
