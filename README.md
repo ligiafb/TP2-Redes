@@ -20,7 +20,7 @@
 - No experimento realizado, *alpha* é o parâmetro aditivo para a janela enquanto *beta* é o parâmetro multiplicativo para decrementar a mesma. Os valores recomendados pela RFC para ambos os parâmetros são: alpha = 1 e beta = 0,5. Dessa forma, a Figura abaixo demonstra a equação para o incremento da janela e a equação utilizada para decrementar o seu tamanho em periodos em que se é detectado um congestionamento, neste caso, o congestionamento é identificado após um periodo pré-estipuldo (temporizador) sem receber um reconhecimento (ACK) de um pacote enviado anteriormente e como o cenário utiliza UDP, não há reconhecimentos duplicados, ou *ACK DUP*, pois todos os pacotes recebem um novo valor para o número de sequencia, inclusive os pacotes retransmitidos.
 
 
-![](exercicioB/AI.gif "Additive Increase")  |  ![](exercicioB/MD.gif "Multiplicative Decrease")
+![](exercicioB/AIMD.gif "Additive Increase")
 
 
 - Com o AIMD implementado, os resultados das simulações não apresentaram beneficios para a vazão, entretanto a técnica garante uma utilização mais justa do canal quando há competição pelo link com outros fluxos. A Tabela a seguir apresenta os resultados obtidos a partir da variação dos valores de *alpha* e *beta*. O temporizador de espera (timeout) pelos ACKs nestes primeiros testes com o AIMD manteve um valor fixo de 1 segundo (1000 ms).
