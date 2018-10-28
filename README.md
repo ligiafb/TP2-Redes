@@ -34,21 +34,21 @@
 - Evidente a necessidade do mecanismo por questões de justiça de utilização do canal, mas a qualidade do modelo implementado é pobre, principalmente quando há muita concorrência pelo canal, pois reduz a janela várias vezes, chegando a transmitir um pacote por vez. Uma forma simples de melhorar o desempenho da conexão é diminuindo o tempo de *Timeout*, ou seja, o tempo esperado pelo recebimento do ACK. Com o *Timeout* configurado em 80ms o desempenho melhorou expressivamente e pode ser observado na Tabela abaixo.
 
 <p float="center" align="center" >
-    <img src='exercicioB/tabela2.png' width='80%' title='Tabela timeout' alt='Tabela timeout' /> 
+    <img src='exercicioB/tabela2.png' width='80%' title='Tabela Timeout' alt='Tabela Timeout' /> 
 </p>
 
 
 ## Exercício D [50%]: Trabalhe para maximizar a potência.
 
-- Para melhorar o desempenho do AIMD do exercicio anterior, bastou diminuir o temporizador de espera pelo reconhecimento do pacote enviado. O ganho em *power* para a transmissão foi bastante significativo quando este temporizador foi configurado para *80 ms* ao invés de 1 segundo. A fim de melhorar ainda mais os resultados, adicionamos o calculo de RTO (Rertransmission TimeOut) conforme descrito na [RFC 6298](https://tools.ietf.org/html/rfc6298). 
+- Para melhorar o desempenho do AIMD do exercicio anterior, bastou diminuir o temporizador de espera pelo reconhecimento do pacote enviado. O ganho em *power* para a transmissão foi bastante significativo quando este temporizador foi configurado para *80 ms* ao invés de 1 segundo. A fim de melhorar ainda mais os resultados, adicionamos o calculo de RTO (Rertransmission Timeout) conforme descrito na [RFC 6298](https://tools.ietf.org/html/rfc6298). 
 
-- O RTO varia de acordo com o RTT. Ele traz maior dinamicidade para a transmissão e proporciona um menor delay. Contudo, pequenas variações do RTT podem reduzir a janela pela metade, diminuindo significativamente o throughput total da transmissão. Com a adição do cálculo do RTO e algumas variações de alpha e beta no código chegamos aos seguintes resultados;
+- O RTO varia de acordo com o RTT. Ele traz maior dinamicidade para a transmissão e proporciona um menor delay. Contudo, pequenas variações do RTT podem reduzir a janela pela metade, diminuindo significativamente o Throughput total da transmissão. Com a adição do cálculo do RTO e algumas variações de alpha e beta no código chegamos aos seguintes resultados;
 
 <p float="center" align="center" >
     <img src='exercicioC/tabela1.png' width='80%' title='Tabela RTO' alt='Tabela RTO' /> 
 </p>
 
-- Com o cálculo de RTO, não foi possível melhorar o desempenho da transmissão comparado com o timeout de valor fixo em 80 ms. Assim, a abordagem adotada foi diminuir a ação do *Multiplicative Decrease* adicionando um contador para o número de retransmissões. Quando um congestionamento é identificado, a CWND é reduzida pela metade conforme o AIMD padrão, porem se mantem com este tamanho por mais tempo, à espera de uma redução do delay sem afetar muito o throughput, caso o RTT não estabilize a janela é reduzida novamente pela metade e mantém esse valor por mais um periodo de tempo. O resultado final do experimento pode ser observado na tabela logo abaixo, duas abordagens com variações do cálculo do RTO com a adição de um limitador, forçando o RTO ser um valor abaixo de 80 e 100 ms e outra com o timeout fixo com ambos os valores. 
+- Com o cálculo de RTO, não foi possível melhorar o desempenho da transmissão comparado com o Timeout de valor fixo em 80 ms. Assim, a abordagem adotada foi diminuir a ação do *Multiplicative Decrease* adicionando um contador para o número de retransmissões. Quando um congestionamento é identificado, a CWND é reduzida pela metade conforme o AIMD padrão, porem se mantem com este tamanho por mais tempo, à espera de uma redução do Delay sem afetar muito o Throughput, caso o RTT não estabilize a janela é reduzida novamente pela metade e mantém esse valor por mais um periodo de tempo. O resultado final do experimento pode ser observado na tabela logo abaixo, duas abordagens com variações do cálculo do RTO com a adição de um limitador, forçando o RTO ser um valor abaixo de 80 e 100 ms e outra com o Timeout fixo com ambos os valores. 
 
 
 <p float="center" align="center" >

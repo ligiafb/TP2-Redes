@@ -1,0 +1,6 @@
+Average capacity: 5.04 Mbits/s
+Average throughput: 4.81 Mbits/s (95.5% utilization)
+95th percentile per-packet queueing delay: 262 ms
+95th percentile signal delay: 677 ms
+Power score: 7.11
+Alpha = 0.250 Beta = 0.750
