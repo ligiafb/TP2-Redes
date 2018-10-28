@@ -42,11 +42,15 @@
 
 - Para melhorar o desempenho do AIMD do exercicio anterior, bastou diminuir o temporizador de espera pelo reconhecimento do pacote enviado. O ganho em *power* para a transmissão foi bastante significativo quando este temporizador foi configurado para *80 ms* ao invés de 1 segundo. A fim de melhorar ainda mais os resultados, adicionamos o calculo de RTO (Rertransmission TimeOut) conforme descrito na [RFC 6298](https://tools.ietf.org/html/rfc6298). 
 
-- o RTO varia de acordo com o RTT. Ele traz maior dinamicidade para a transmissão e proporciona um menor delay. Contudo, pequenas variações do RTT podem reduzir a janela pela metade, diminuindo significativamente o throughput total da transmissão. Com a adição do cálculo do RTO ao código chegamos aos seguintes resultados, conforme a tabela a abaixo:
+- o RTO varia de acordo com o RTT. Ele traz maior dinamicidade para a transmissão e proporciona um menor delay. Contudo, pequenas variações do RTT podem reduzir a janela pela metade, diminuindo significativamente o throughput total da transmissão. Com a adição do cálculo do RTO e algumas variações de alpha e beta no código chegamos aos seguintes resultados;
 
-| AIMD | Slow Start | Congestion Avoidance | Timeout (ms) | Throughput (Mbits/s) | Delay (ms) | Power |
-| :--- |  :----:  |  :----:  |  :----: |  :----: |  :----:   |  :----:  |
-| X | X | X | RTO | 3.5  | 100 | ~ 13 |
+| Timeout | Throughput (Mbits/s) | Delay (ms) | Power |
+| : ---   |   :----:   | :---: |  ---: |
+| RTO | 2.74 | 227 | 12.07 |
+| RTO | 2.06 | 150 | 13.74 |
+| RTO | 1.96 | 138 | 14.18 |
+| RTO | 1.63 | 158 | 10.31 |
+
 
 ## Exercício E [0%]: escolha um nome legal para o seu esquema!
 
