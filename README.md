@@ -42,10 +42,10 @@
 
 - Para melhorar o desempenho do AIMD do exercicio anterior, bastou diminuir o temporizador de espera pelo reconhecimento do pacote enviado. O ganho em *power* para a transmissão foi bastante significativo quando este temporizador foi configurado para *80 ms* ao invés de 1 segundo, como o padrão do código e sugestão da RFC 6298. A fim de melhorar ainda mais os resultados, adicionamos o calculo de RTO dado pela formula abaixo. 
 
-<p float="left" align="center" >
-    <img src='exercicioB/rto1.png' width='80%' title='Tabela timeout' alt='Tabela timeout' /> 
-    <img src='exercicioB/rto2.png' width='80%' title='Tabela timeout' alt='Tabela timeout' /> 
-    <img src='exercicioB/rto3.png' width='80%' title='Tabela timeout' alt='Tabela timeout' /> 
+<p float="left" align="left" >
+    <img src='exercicioB/rto1.png' width='50%' title='Tabela timeout' alt='Tabela timeout' /> 
+    <img src='exercicioB/rto2.png' width='60%' title='Tabela timeout' alt='Tabela timeout' /> 
+    <img src='exercicioB/rto3.png' width='50%' title='Tabela timeout' alt='Tabela timeout' /> 
 </p>
 
 
